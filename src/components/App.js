@@ -5,6 +5,7 @@ import Statistics from './statistics';
 import Notification from "./notification";
 import { feedbackState } from '../data/feedbackState';
 import { AppWrap } from './App.styled'
+import { GlobalStyle } from './GlobalStyled';
 
 class App extends Component {
   state = {
@@ -56,6 +57,7 @@ class App extends Component {
             <Notification message="No feedback given" />
           )}
         </Section>
+        <GlobalStyle />
       </AppWrap>
     );
   }
